@@ -1,0 +1,17 @@
+.instagram {
+    text-decoration: none;
+    color: white;
+    @include transition-one();
+    @include onHover()
+}
+
+.btn-wrapper {
+    margin-top: 50px;
+
+
+}
+
+.file-btn {
+    color: blueviolet;
+    font-size: 0.8rem;
+}
