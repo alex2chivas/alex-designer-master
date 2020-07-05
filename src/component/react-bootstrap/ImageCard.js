@@ -9,7 +9,7 @@ const ImageCard = ({ title, onEdit, onDelete, login, picture, id }) => {
 	const renderContent = () => {
 		if (login) {
 			return (
-				<Card.Footer className='edit-delete-wrapper'>
+				<Card.Footer className="edit-delete-wrapper">
 					<div>{onEdit}</div>
 					<div>{onDelete}</div>
 				</Card.Footer>
@@ -29,8 +29,8 @@ const ImageCard = ({ title, onEdit, onDelete, login, picture, id }) => {
 
 	return (
 		<React.Fragment>
-			<Card className='bg-dark text-white card-wrapper'>
-				<Card.Img src={picture} className={`post-image ${primaryStyle}`} alt='Card image' />
+			<Card className="bg-dark text-white card-wrapper">
+				<Card.Img src={picture} className={`post-image ${primaryStyle}`} alt="Card" />
 				<Col className={`card-title ${primaryColor}`}>{title}</Col>
 				<Link to={`/design/collection/${id}`}>
 					<Card.ImgOverlay
@@ -39,7 +39,7 @@ const ImageCard = ({ title, onEdit, onDelete, login, picture, id }) => {
 						onMouseLeave={() => handleMouseLeave()}
 					/>
 				</Link>
-				<Row className='btns-wrapper'>
+				<Row className="btns-wrapper">
 					<Col>{renderContent()}</Col>
 				</Row>
 			</Card>

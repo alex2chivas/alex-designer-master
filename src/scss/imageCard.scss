@@ -1,74 +1,72 @@
 .card-wrapper {
-    margin-bottom: 25px;
-    border-radius: $border-radius;
-    width: auto;
+	margin-bottom: 25px;
+	border-radius: $border-radius;
+	width: auto;
 
-    .card-title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        height: 400px;
-        font-size: 1.5rem;
+	.card-title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		height: 400px;
+		font-size: 1.5rem;
 
-        @media all and (max-width: 550px) {
-            height: 300px;
-        }
-    }
+		@media all and (max-width: 550px) {
+			height: 300px;
+		}
+	}
 
-    .img-blur {
-        @include ease-in-out-1();
-        filter: brightness(0.4);
-    }
+	.img-blur {
+		@include ease-in-out-1();
+		filter: brightness(0.4);
+	}
 
-    .display-none {
-        @include ease-in-out-1();
-        color: transparent;
-    }
+	.display-none {
+		@include ease-in-out-1();
+		color: transparent;
+	}
 
-    .display-color {
-        @include ease-in-out-1();
-        color: white;
+	.display-color {
+		@include ease-in-out-1();
+		color: white;
 
-        @media all and (max-width: 550px) {
-            font-size: 1rem;
-        }
-    }
+		@media all and (max-width: 550px) {
+			font-size: 1rem;
+		}
+	}
 
-    .content-wrapper {
-        font-size: 0.8rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+	.content-wrapper {
+		font-size: 0.8rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 
+		.title-des-wrapper {
+			display: flex;
+			flex-direction: column;
 
+			p {
+				font-size: 0.7rem;
+			}
 
-        .title-des-wrapper {
-            display: flex;
-            flex-direction: column;
+			div {
+				display: flex;
+			}
+		}
+	}
 
-            p {
-                font-size: 0.7rem;
-            }
+	.edit-delete-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
 
-            div {
-                display: flex;
-            }
-        }
-    }
+	.post-image {
+		@include ease-in-out-1();
+		border-radius: $border-radius;
+		height: 525px;
 
-    .edit-delete-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .post-image {
-        @include ease-in-out-1();
-        border-radius: $border-radius;
-        height: 400px;
-
-        @media all and (max-width: 550px) {
-            height: 300px;
-        }
-    }
+		@media all and (max-width: 550px) {
+			height: 325px;
+		}
+	}
 }

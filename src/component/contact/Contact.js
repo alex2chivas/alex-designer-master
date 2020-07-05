@@ -4,7 +4,7 @@ import ContactList from './ContactList';
 
 const Contact = (props) => {
 	return (
-		<Container className="contact-container">
+		<Container className="contact-container" fluid>
 			<ContactList login={props.loginStatus} />
 		</Container>
 	);

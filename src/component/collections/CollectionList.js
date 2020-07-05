@@ -18,7 +18,7 @@ const CollectionList = ({ collections, login }) => {
 		return collections.map((collection) => {
 			return (
 				<React.Fragment key={collection.id}>
-					<Col xs={12} md={6} lg={6} className="image-text-content">
+					<Col xs={12} md={6} lg={{ span: 6, offset: 0 }} className="image-text-content">
 						<ImageCard
 							id={collection.id}
 							title={collection.title}
