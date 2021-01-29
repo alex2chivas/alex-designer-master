@@ -1,0 +1,44 @@
+@mixin transition-one {
+    transition: 0.2s ease-out;
+}
+
+@mixin onHover {
+    &:hover {
+        color: teal
+    }
+}
+
+@mixin padding-overall {
+    padding-top: 20px !important;
+}
+
+@mixin image-background-wood ($height) {
+    background-image: url('../images/wood-bg-white.jpg');
+    background-repeat: no-repeat;
+    background-color: $grey;
+    background-size: cover;
+    background-position-y: center;
+    height: $height;
+
+}
+
+@mixin image-background-la ($height) {
+    background-image: url('../images/los-angeles.jpg');
+    background-repeat: no-repeat;
+    background-color: $grey;
+    background-size: cover;
+    height: $height;
+
+}
+
+@mixin image-background-sky ($height) {
+    background-image: url('../images/dark-background-sky.jpeg');
+    background-repeat: no-repeat;
+    background-color: $grey;
+    background-size: cover;
+    height: $height;
+}
+
+@mixin ease-in-out-1 {
+    transition: 0.6s all ease-out
+}

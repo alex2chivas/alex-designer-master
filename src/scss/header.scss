@@ -1,0 +1,37 @@
+.header-navigation {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    height: 100px;
+    font-size: 1.4rem;
+
+    @media all and (max-width:$max-width) {
+        font-size: 0.8rem;
+        height: 50px;
+    }
+
+    .ig-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header-content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .link {
+        text-decoration: none;
+        color: white;
+        @include transition-one();
+        @include onHover();
+    }
+
+    i {
+        height: 20px;
+        width: 20px;
+    }
+}

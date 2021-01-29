@@ -1,0 +1,29 @@
+.about-container {
+    @include padding-overall();
+    padding-bottom: 50px;
+    height: 100%;
+
+    .about-image-wrapper {
+        img {
+            height: 300px;
+            width: 300px;
+            float: left;
+            padding: 20px;
+
+            @media all and(max-width:$max-width) {
+                height: 200px;
+                width: 200px;
+                float: left;
+                padding: 20px;
+            }
+        }
+
+        .about-content {
+            font-size: 1.6rem;
+
+            @media all and (max-width:$max-width) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
