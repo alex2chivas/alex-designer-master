@@ -17,7 +17,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import reducers from './reducers'
 import Home from './component/homeFolder/home'
 import About from './component/about/About'
-import Contact from './component/contact/Contact'
+// import Contact from './component/contact/Contact'
 import Collections from './component/collections/Collections'
 import Collection from './component/collections/Collection'
 import history from '../src/history'
@@ -62,7 +62,7 @@ ReactDOM.render(
           <Switch>
             <Route path='/' exact component={Home} />
             <Route path='/design/about' exact component={About} />
-            <Route path='/design/contact' exact component={Contact} />
+            {/* <Route path='/design/contact' exact component={Contact} /> */}
             <Route path='/design/collection' exact component={Collections} />
             <Route path='/design/collection/:id' exact component={Collection} />
             <Route path='/design/edit/:id' exact component={EditPost} />

@@ -28,13 +28,13 @@ const Header = () => {
               </Link>
             </OverlayDisplay>
           </Col>
-          <Col>
+          {/* <Col>
             <OverlayDisplay type='CONTACT'>
               <Link to='/design/contact' className='link'>
                 Contact
               </Link>
             </OverlayDisplay>
-          </Col>
+          </Col> */}
           <Col>
             <OverlayDisplay type='COLLECTIONS'>
               <Link to='/design/collection' className='link'>
